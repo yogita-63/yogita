@@ -1,0 +1,30 @@
+.slidess{
+
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px;
+    margin-top: 80px;
+    background-color: rgb(254, 248, 248);
+
+    .containerss{
+        width: 1180px;
+        height : 200px;
+       
+
+        .carousel-prev,.carousel-next{
+            
+            background-color: transparent;
+            margin:auto;
+         }
+
+        .carousel-prev {
+            left: -1%;
+          }
+          .carousel-next{
+            right: -0.5%;
+          }
+          
+
+
+    }
+}

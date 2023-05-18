@@ -1,0 +1,101 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #004d1a;
+    color :white;
+    align-items: center;
+    transition : 0.5 all ease;
+    position: sticky;
+    z-index: 999;
+
+    font-family: "Montserrat" , sans-serif;
+
+    &.active{
+      background-color: white;
+      color:black;
+      position:sticky;
+      z-index: 999;
+      top: 0;
+      
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1% 0%;
+        .logo{
+          padding-right : 25%; 
+            font-size: 220%;
+            font-weight: bold;
+           .dot{
+            color: rgb(5, 178, 132);
+           }
+        }
+        .links{
+            display: flex;
+            gap: 3%;
+            align-items :center;
+            font-weight: bold;
+            font-family: "Montserrat" , sans-serif;
+
+            .user{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              cursor: pointer;
+              position: relative;
+            }
+            img{
+              width: 15%;
+              height: 15%;
+              border-radius:50%;
+              object-fit: cover;
+            }
+            .options{
+              position: absolute;
+              top: 135%;
+              right: 53%;
+              padding : 1%;
+              background-color: white;
+              border:1px solid lightgray;
+              border-radius : 5%;
+              display : flex;
+              flex-direction: column;
+              gap: 10px;
+              color:grey;
+              width: 65%;
+              font-weight: 300;
+            }
+            
+            button{
+              color:white;
+              padding : 2% 2%;
+              border-radius: 5px;
+              border : 1px solid white;
+              cursor :pointer;
+              background-color: transparent;
+
+              &:hover{
+                background-color: #1dbf73;
+                border-color: #1dbf73;
+              }
+            }
+        }
+    }
+    hr{
+      width : 100%;
+      height: 0;
+      border: 0.5px solid lightgrey;
+    }
+    .menu{
+      width:100%;
+      padding : 10px 0px;
+      display : flex;
+      color :rgb(139, 138, 138);
+      justify-content: center;
+      font-weight: 100;
+      font-size: 87%;
+      gap: 1.4%;
+      font-family: "Montserrat" , sans-serif;
+    }
+}
